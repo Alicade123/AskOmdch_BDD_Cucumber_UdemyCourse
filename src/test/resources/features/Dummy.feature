@@ -1,8 +1,9 @@
-@dummyFeatures
+
 Feature: Add to cart
   As a customer of xyz website
   I want to add a product to the cart
   So that I can purchase the product
+
 
   Rule: rule 1
     Background: This is a first background
@@ -10,9 +11,11 @@ Feature: Add to cart
         Given I am dummy
         When I do dummy things
         Then dummy things happens
+        But It's ok
 
   Rule: rule 2
     Background: This is a second background
+    @dummyFeature
       Scenario: Dummy Scenario
         Given I am dummy
         When I do dummy things
