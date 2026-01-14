@@ -31,4 +31,8 @@ public class Dummy{
     public void closingBalance(int remaining) {
 
     }
+    @But ("It's ok")
+        public void itsOk(){
+
+    }
 }
