@@ -1,4 +1,4 @@
-
+@dummy
 Feature: Add to cart
   As a customer of xyz website
   I want to add a product to the cart
@@ -15,13 +15,13 @@ Feature: Add to cart
 
   Rule: rule 2
     Background: This is a second background
-    @dummyFeature
+    @dummy @scenario1
       Scenario: Dummy Scenario
         Given I am dummy
         When I do dummy things
         Then dummy things happens
 
-
+    @dummy @scenario2
         Scenario Outline: Dummy Scenario 3
           Given I am dummy account balance is $<opening balance>
           When I withdraw $<withdraw amount>
