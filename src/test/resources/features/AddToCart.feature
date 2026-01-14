@@ -6,7 +6,10 @@
 
 Rule: Add product from StorePage
 
-    Scenario:Add one Quantity to the cart
+    Scenario Outline:Add one Quantity to the cart
       Given I'm on the Store Page
-      When I add a "Blue Shoes" to the Cart
-      Then I see 1 "Blue Shoes" in the Cart
+      When I add a "<product_name>" to the Cart
+      Then I see 1 "<product_name>" in the Cart
+      Examples:
+      |product_name|
+      |Blue Shoes  |
